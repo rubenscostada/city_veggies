@@ -2,7 +2,7 @@ class GardensController < ApplicationController
   def index
     @gardens = Garden.all
   end
-  
+
   def show
     @garden = Garden.find(params[:id])
   end
@@ -17,6 +17,15 @@ class GardensController < ApplicationController
       redirect_to garden_path(@garden)
     else
       render 'new'
+    end
+  end
+
+  def home
+    @gardens = Garden.all
+    @search = params["search"]
+    if @search.present?
+      @country = @search["country"]
+      @gardens = Garden.where(country: @country)
     end
   end
 
