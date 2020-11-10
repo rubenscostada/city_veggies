@@ -1,0 +1,17 @@
+<div>
+  <div class="banner-content">
+    <h1>Veggies in the city</h1>
+    <p>Rent your place to grow delicious food</p>
+    <%= link_to "Rent a garden", new_garden_path, class: "btn btn-primary btn-lg" %>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <% @gardens.each do |garden| %>
+      <h2><%= garden.name %></h2>
+      <p><%= garden.description %></p>
+      <p><%= garden.country %></p>
+      <p><%= garden.price_per_month %></p>
+    <% end %>
+  </div>
+</div>
