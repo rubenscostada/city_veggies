@@ -7,11 +7,14 @@
 </div>
 <div class="container">
   <div class="row">
-    <% @gardens.each do |garden| %>
-      <h2><%= garden.name %></h2>
-      <p><%= garden.description %></p>
-      <p><%= garden.country %></p>
-      <p><%= garden.price_per_month %></p>
-    <% end %>
+    <div class="col-12">
+        <% @gardens.each do |garden| %>
+        <h2><%= garden.name %></h2>
+        <p><%= garden.description %></p>
+        <p><%= garden.country %></p>
+        <p><%= garden.price_per_month %></p>
+      <% end %>
+    </div>
+
   </div>
 </div>
