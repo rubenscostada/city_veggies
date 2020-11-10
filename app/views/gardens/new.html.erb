@@ -1,11 +1,10 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <h1>Add a new garden!</h1>
-        <h2>Rent a spot of it to people!</h2>
+      <h1>Add a new garden to <em>Veggies in the city</em></h1>
 
       <%= simple_form_for @garden do |f| %>
-        <%= f.input :country %>
+        <%= f.input :country, as: :string %>
         <%= f.input :name %>
         <%= f.input :description %>
         <%= f.input :price_per_month %>
