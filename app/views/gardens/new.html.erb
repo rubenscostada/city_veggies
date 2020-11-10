@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1>Add a new garden!</h1>
+        <h2>Rent a spot of it to people!</h2>
+
+      <%= simple_form_for @garden do |f| %>
+        <%= f.input :country %>
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <%= f.input :price_per_month %>
+        <%= f.button :submit, class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
