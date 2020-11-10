@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Book now - <%= @garden.name %></h1>
+  <%= link_to "Go back to all gardens", root_path %>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <table class="table table-bordered">
+        <tbody>
+<!--           <thead>
+            <th><%= @garden.country %></th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price Per Month</th>
+          </thead> -->
+          <h2><%= @garden.name %> </h2>
+          <p>Located in <%= @garden.country %> | <%= @garden.price_per_month %> euros per month</p> <br>
+
+          <p><%= @garden.description %></p> <br>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
