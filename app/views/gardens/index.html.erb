@@ -8,19 +8,21 @@
   </div>
 </div>
 <div class="container">   
-        <% @gardens.each do |garden| %>
-          <div class="row">
-           <div class="col-12">
-             <div class="card-product">
-              <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garden-layout-1582574581.jpg" />
+  <% @gardens.each do |garden| %>
+  <%= link_to garden_path(garden.id) do %>
+    <div class="row">
+      <div class="col-12">
+        <div class="card-product">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garden-layout-1582574581.jpg" />
             <div class="card-product-infos">
-              <h2> <%= garden.name %> </h2>
+               <h2> <%=garden.name %> </h2>
               <h5> <%= garden.country %> </h5>
               <p><%= garden.description %> </p>
               <p><strong><%= garden.price_per_month %> € </strong></p>
             </div>
-          </div>
-              </div>
         </div>
-        <% end %>
+      </div>
+    </div>
+    <% end %> 
+  <% end %>
 </div>
