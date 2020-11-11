@@ -1,0 +1,19 @@
+.banner{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.9;
+}
+
+.banner .container {
+
+  color: white;
+}

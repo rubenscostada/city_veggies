@@ -1,19 +1,30 @@
-<%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline'} do |f| %>
-  <%= f.input :country,input_html: { value:""}, as: :string %>
-  <%= f.submit "Search", class: "btn btn-primary" %>
-<% end %>
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+  <div class="container">
+    <h1>Find a garden in your neighbourhood</h1>
+      <p>Rent a spot and grow vegetables!</p>
 
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 offset-sm-2">
-      <h1>Gardens</h1>
-      <% @gardens.each do |garden| %>
-        <h3><%= garden.name %></h3>
-        <p><%= garden.description %></p>
-        <p><%= garden.country %></p>
-        <p><%= garden.price_per_month %></p>
-      <% end %>
+      <%= render 'shared/searchform' %>
     </div>
-  </div>
 </div>
+
+<div>
+  <div class="container text">
+    <h1 class="display-4 text-center">About City Veggies</h1>
+      <div class="container jumbo">
+        <div class="item">
+          <p class="line-content"><i class="fas fa-arrows-alt"></i> We are <strong>the world’s largest marketplace for garden rentals. </strong></p>
+        </div>
+        <div class="item">
+          <p class="line-content"><i class="fas fa-briefcase"></i> Weather You're looking for just a tiny space in your city or for a larger land to grow some fruits and veggies! You will always find <strong>the perfect spot</strong> for you!</p>
+        </div>
+        <div class="item">
+        <p class="line-content"><i class="far fa-building"></i> Our network includes gardens in all European capitals! </p>
+        </div>
+        <div class="item">
+        <p class="line-content"><i class="fas fa-globe"></i> We were founded in Portugal in 2020. City Veggies is based in Lisbon.</p>
+        </div>
+      </div>
+  </div>
+
+</div>
+

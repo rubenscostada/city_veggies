@@ -1,0 +1,12 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+  <div class="container">
+    <div class="content">
+      <h1>Find a garden in your neighbourhood</h1>
+      <%= simple_form_for :search, url: gardens_path, method: "GET", html: { class: 'form-inline'} do |f| %>
+      <%= f.input :country,input_html: { value:""}, as: :string %>
+      <%= f.submit "Search", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+

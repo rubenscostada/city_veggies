@@ -1,27 +1,20 @@
 <div class="container">
-  <h1>Book now - <%= @garden.name %></h1>
-  <%= link_to "Go back to all gardens", root_path %>
-  <br>
-
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <table class="table table-bordered">
-        <tbody>
-<!--           <thead>
-            <th><%= @garden.country %></th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price Per Month</th>
-          </thead> -->
-          <h2><%= @garden.name %> </h2>
-          <p>Located in <%= @garden.country %> | <%= @garden.price_per_month %> euros per month</p> <br>
-
-          <p><%= @garden.description %></p> <br>
-
-        </tbody>
-      </table>
+  <div class="card-trip">
+    <img src="https://images.unsplash.com/photo-1536236010565-78fbb2fb25d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" />
+    <div class="card-trip-infos">
+      <div>
+        <h2> <%= @garden.name %> </h2>
+        <p> <%= @garden.description %> </p>
+      </div>
+      <h2 class="card-trip-pricing"><%= @garden.price_per_month %> €/month</h2>
     </div>
   </div>
 </div>
 
-
+<div class="container">
+  <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+  <%= f.input :name, input_html: {value: "First name"} %>
+  <%= f.input :name, input_html: {value: "Last name"} %>
+  <%= f.submit "Search", class: "btn btn-primary" %>
+<% end %>
+</div>
