@@ -17,17 +17,8 @@
 //     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 // }
 
-.search-form {
-  position: relative;
-  width: 80vw;
-}
-
-
-.search-form .btn-primary {
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  right: 8px;
+.container .search-form {
+  width: 100%;
 }
 
 // .btn-primary {
