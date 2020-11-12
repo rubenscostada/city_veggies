@@ -10,6 +10,8 @@ class GardensController < ApplicationController
 
   def show
     @garden = Garden.find(params[:id])
+    @booking = Booking.new
+    @user = current_user
   end
 
   def new
