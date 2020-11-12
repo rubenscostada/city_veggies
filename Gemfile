@@ -33,6 +33,7 @@ gem 'faker'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'simple_form'
+gem 'flatpickr'
 
 group :development, :test do
   gem 'pry-byebug'
