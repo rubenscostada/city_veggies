@@ -1,5 +1,5 @@
 <%= simple_form_for :search, url: gardens_path, method: "GET", html: { class: 'form-inline'} do |f| %>
-<%= f.input :country, input_html: { value:""}, as: :string, placeholder: "Search by Country", label: false %>
+<%= f.input :country, input_html: { value:""}, as: :string, placeholder: "Type your city", label: false %>
 <%= f.submit "Search", class: "btn btn-primary" %>
 <% end %>
 
