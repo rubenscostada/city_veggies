@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <div class="banner-content">
     <div class= "container">
       <h1>Veggies in the city</h1>
@@ -6,7 +6,7 @@
       <%= link_to "Add a garden", new_garden_path, class: "btn btn-primary btn-lg" %>
     </div>
   </div>
-</div>
+</div> -->
 <div class="search-form">
   <%= render 'shared/searchform' %>
 </div>
@@ -37,7 +37,7 @@
     <div class="cards">
       <% @gardens.each do |garden| %>
         <%= link_to garden_path(garden.id) do %>
-          <div class="col-12">          
+          <div class="col-12">
             <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garden-layout-1582574581.jpg)">
               <h2> <%=garden.name %> </h2>
               <h5> <%= garden.country %> </h5>
