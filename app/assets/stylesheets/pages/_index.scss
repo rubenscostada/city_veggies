@@ -1,5 +1,7 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "profile";
+@import "show";
 
 // new card set up
 
@@ -79,5 +81,3 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-
