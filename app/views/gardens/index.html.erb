@@ -7,7 +7,9 @@
     </div>
   </div>
 </div>
-<%= render 'shared/searchform' %>
+<div class="search-form">
+  <%= render 'shared/searchform' %>
+</div>
 <div class="container">
   <% @gardens.each do |garden| %>
     <%= link_to garden_path(garden.id) do %>
@@ -24,8 +26,6 @@
           </div>
         </div>
       </div>
-    <% end %> 
-    </div>
     <% end %>
   <% end %>
 </div>

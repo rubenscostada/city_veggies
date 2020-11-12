@@ -1,11 +1,19 @@
 class GardensController < ApplicationController
   def index
-    @gardens = Garden.all
-    @search = params["search"]
-    if @search.present?
-      @country = @search["country"]
-      @gardens = Garden.where(country: @country)
+    if params[:search]
+      if params[:search][:country].present?
+        @gardens = Garden.search_by_name_country_and_city(params[:search][:country])
+      else
+        @gardens = Garden.all
+      end
+    else 
+      @gardens = Garden.all
     end
+    # @search = params["search"]
+    # if @search.present?
+    #   @country = @search["country"]
+    #   @gardens = Garden.where(country: @country)
+    # end
   end
 
   def show
