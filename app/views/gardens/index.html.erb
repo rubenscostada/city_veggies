@@ -10,11 +10,12 @@
 <div class="search-form">
   <%= render 'shared/searchform' %>
 </div>
+<!--
 <div class="container">
   <% @gardens.each do |garden| %>
     <%= link_to garden_path(garden.id) do %>
       <div class="row">
-        <div class="col-12">
+        <div class="col-8">
           <div class="card-product">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garden-layout-1582574581.jpg" />
             <div class="card-product-infos">
@@ -28,4 +29,22 @@
       </div>
     <% end %>
   <% end %>
+</div>
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="cards">
+      <% @gardens.each do |garden| %>
+        <%= link_to garden_path(garden.id) do %>
+          <div class="col-12">          
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garden-layout-1582574581.jpg)">
+              <h2> <%=garden.name %> </h2>
+              <h5> <%= garden.country %> </h5>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>
