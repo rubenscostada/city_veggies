@@ -1,20 +1,21 @@
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 100%;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border-radius: 2px;
 }
 
 .card-product img {
+  width: 500px;
   height: 100%;
-  width: 120px;
   object-fit: cover;
 }
 
 .card-product h2 {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
@@ -27,26 +28,21 @@
   margin-top: 8px;
 }
 
+.container .card-trip-pricing {
+margin-left: 260px;
+opacity: 0.8;
+}
+
 .card-product .card-product-infos {
   padding: 16px;
 }
 
-.row {
-  margin-bottom: 8px;
-  color: black;
+.btn-primary {
+  background-color: rgb(247, 152, 98);
+  border: none;
 }
 
-.container a {
-  text-decoration: none;
-}
-
-.banner-content {
-  margin-bottom: 22px;
-}
-
-.search-form {
-  display: flex;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  justify-content: center;
+.btn-primary:hover {
+  background-color: rgba(247, 152, 98, 0.8);
+  border: none;
 }

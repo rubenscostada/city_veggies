@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .footer-distributed .footer-left {
     width: 40%;
 }
@@ -6,7 +9,7 @@
     vertical-align: top;
 }
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -14,18 +17,18 @@ div {
     display: block;
 }
 .footer-distributed {
-    background: #666;
+    background: 		#E8E8E8;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    // font: bold 16px sans-serif;
     padding: 20px 20px;
     margin-top: 30px;
 }
 body {
     margin: 0;
-    font-family: "Comfortaa", "cursive";
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -35,7 +38,7 @@ body {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -50,7 +53,7 @@ html {
     vertical-align: top;
 }
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 user agent stylesheet
@@ -58,17 +61,17 @@ div {
     display: block;
 }
 .footer-distributed {
-    background: #666;
+    background: 		#E8E8E8;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    // font: bold 16px sans-serif;
     padding: 20px 20px;
 }
 body {
     margin: 0;
-    font-family: "Comfortaa", "cursive";
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -78,7 +81,7 @@ body {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -93,7 +96,7 @@ html {
     vertical-align: top;
 }
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 user agent stylesheet
@@ -101,17 +104,17 @@ div {
     display: block;
 }
 .footer-distributed {
-    background: #666;
+    background: 		#E8E8E8;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
+    // font: bold 16px sans-serif;
     padding: 20px 20px;
 }
 body {
     margin: 0;
-    font-family: "Comfortaa", "cursive";
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -121,14 +124,74 @@ body {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 a {
-    color: #90EE90;
+    color: #000000;
     text-decoration: none;
+    // background-color: transparent;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    color: #383838;
+    text-decoration: underline;
     background-color: transparent;
 }
+
+// .icon {
+//   position: relative;
+//   /* Adjust these values accordingly */
+// //   top: 5px;
+// //   left: 5px;
+// }
+
+// p {
+//   display: flex;
+//   width: 180px;
+// }
+
+// p:before {
+//   content: "@";
+//   padding-right: 4px;
+// }
+
+.fa-map-marker{
+float: left;
+padding-right: 0.5vw;
+margin-right: 10px;
+margin-top: 3px;
+}
+
+.fa-phone{
+float: left;
+padding-right: 0.5vw;
+margin-right: 10px;
+margin-top: 3px;
+}
+
+.fa-envelope{
+float: left;
+padding-right: 0.5vw;
+margin-right: 10px;
+margin-top: 3px;
+}
+
+#ab {
+    padding-top: 0px;
+   padding-inline-start: 0px;
+   font-family: 'Raleway', sans-serif;
+   margin-right: 0%;
+}
+
+.footer-distributed, #line {
+  border-top: 1px solid #C8C8C8;
+}
+
