@@ -17,8 +17,24 @@
 //     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 // }
 
-.container .search-form {
-  width: 100%;
+.form-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-center .btn {
+  margin-left: 2px;
+}
+
+.form-center .btn-primary {
+  background-color: rgb(247, 152, 98);
+  border: none;
+}
+
+.form-center .btn-primary:hover {
+  background-color: rgba(247, 152, 98, 0.8);
+  border: none;
 }
 
 // .btn-primary {
