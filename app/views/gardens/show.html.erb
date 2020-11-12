@@ -1,7 +1,7 @@
 <div class = "container">
 
   <div class="card-product">
-    <img class = "img" src="https://images.unsplash.com/photo-1536236010565-78fbb2fb25d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" />
+    <%= cl_image_tag @garden.photo.key, crop: :fill %>
     <div class="card-product-infos">
       <h2> <%= @garden.name %> </h2>
       <p> <%= @garden.description %> </p> <br>

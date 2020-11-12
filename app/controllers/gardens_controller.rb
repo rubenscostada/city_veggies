@@ -6,7 +6,7 @@ class GardensController < ApplicationController
       else
         @gardens = Garden.all
       end
-    else 
+    else
       @gardens = Garden.all
     end
     # @search = params["search"]
@@ -39,6 +39,6 @@ class GardensController < ApplicationController
   private
 
   def garden_params
-    params.require(:garden).permit(:name, :country, :description, :price_per_month)
+    params.require(:garden).permit(:name, :country, :description, :price_per_month, :photo)
   end
 end
