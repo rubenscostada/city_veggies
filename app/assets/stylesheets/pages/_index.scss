@@ -98,22 +98,19 @@
 .row {
   display: block;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 #map {
-  height: 50vh;
+  height: 70vh;
   position: sticky;
   top: 0;
   background-color: black;
+  padding: 0px 500px 10px 10px;
 }
 
 .main-container {
   display: flex;
-}
-
-.map{
-  padding: 0px 100px 10px 10px;
 }
 
 .cards {
