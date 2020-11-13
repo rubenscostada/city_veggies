@@ -5,10 +5,10 @@ class DashboardController < ApplicationController
   end
 
   def booking
+    @user = current_user
+    @bookings = @user.garden_bookings
   end
 
   def rental
   end
 end
-
-
