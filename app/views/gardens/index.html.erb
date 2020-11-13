@@ -65,7 +65,11 @@
       <% end %>
     </div>
   </div>
-  <div class="map" >
-  <img id="map" src='pk.eyJ1Ijoiam9jYmF0aXN0YSIsImEiOiJja2d1dDcxMTcweWhwMnpwOWJ6NjR1dXV4In0.SFIOWxRU18e2NnS7vE80Mg' width=600px height=auto>
+  
+  <div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+
   </div>
 </div>

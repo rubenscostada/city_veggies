@@ -1,0 +1,27 @@
+<div class="dashboard-nav">
+  <nav class="nav">
+    <%= link_to "My Gardens", dashboard_gardens_path, class: "nav-link" %>
+    <%= link_to "My Bookings", dashboard_rentals_path, class: "nav-link" %>
+  </nav>
+</div>
+
+<div class="container">
+  <% @bookings.each do |booking| %>
+    <%= link_to garden_path(booking.garden.id) do %>
+      <div class="row">
+        <div class="col-12">
+          <div class="card-product">
+            <%= cl_image_tag booking.garden.photo.key, crop: :fill %>
+            <div class="card-product-infos">
+              <h2> <%=booking.garden.name %> </h2>
+              <h5> <%= booking.garden.country %> </h5>
+              <p> <%= booking.garden.description %> </p>
+              <p><strong><%= booking.garden.price_per_month %> €/month </strong></p> <br>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+ </div>

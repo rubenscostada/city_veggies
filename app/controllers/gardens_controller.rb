@@ -9,11 +9,13 @@ class GardensController < ApplicationController
     else
       @gardens = Garden.all
     end
-    # @search = params["search"]
-    # if @search.present?
-    #   @country = @search["country"]
-    #   @gardens = Garden.where(country: @country)
-    # end
+    
+    @markers = @gardens.geocoded.map do |garden|
+      {
+        lat: garden.latitude,
+        lng: garden.longitude
+      }
+    end
   end
 
   def show
@@ -34,6 +36,12 @@ class GardensController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @garden = Garden.find(params[:id])
+    @garden.destroy
+    redirect_to dashboard_gardens_path
   end
 
   private

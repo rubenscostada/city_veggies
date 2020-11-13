@@ -36,6 +36,8 @@ gem 'devise'
 gem 'simple_form'
 gem 'flatpickr'
 
+gem 'geocoder'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
