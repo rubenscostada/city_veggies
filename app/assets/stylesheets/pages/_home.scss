@@ -1,4 +1,6 @@
 // Specific CSS for your home-page
+
+
 .container-text {
   // border: 1px solid rgb(230,230,230);
   // box-shadow: 0 0 5px rgb(230,230,230);
@@ -33,3 +35,39 @@
   height: 230px;
   width: 230px;
  }
+
+
+ // Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .container-text {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .container-text {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .container-text {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .container-text {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container-text {
+    grid-template-columns: 1fr 1fr;
+  }
+}

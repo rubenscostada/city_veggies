@@ -32,7 +32,9 @@
 </div>
 -->
 
-<div class="container">
+
+<div class="main-container">
+
   <div class="row">
     <div class="cards">
       <% @gardens.each do |garden| %>
@@ -40,8 +42,12 @@
           <%= link_to garden_path(garden.id) do %>
           <div class="col-12">
             <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path garden.photo.key, crop: :fill; %>')">
-              <h2> <%=garden.name %> </h2>
+              <div class="garden-name">
+              <h2 class="garden-name"> <%=garden.name %>  <h5 class="garden-country"> <%= garden.country %> </h5></h2>
+              </div>
+              <!-- <div class="garden-country"> 
               <h5> <%= garden.country %> </h5>
+              </div> -->
             </div>
           </div>
       <% end %>
@@ -49,13 +55,17 @@
         <%= link_to garden_path(garden.id) do %>
           <div class="col-12">
             <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garden-layout-1582574581.jpg)">
-              <h2> <%=garden.name %> </h2>
-              <h5> <%= garden.country %> </h5>
+              <h2 class="garden1"> <%=garden.name %> </h2>
+              <br>
+              <h5 class="garden1"> <%= garden.country %> </h5>
             </div>
           </div>
         <% end %>
       <% end %>
       <% end %>
     </div>
+  </div>
+  <div class="map" >
+  <img id="map" src='pk.eyJ1Ijoiam9jYmF0aXN0YSIsImEiOiJja2d1dDcxMTcweWhwMnpwOWJ6NjR1dXV4In0.SFIOWxRU18e2NnS7vE80Mg' width=600px height=auto>
   </div>
 </div>

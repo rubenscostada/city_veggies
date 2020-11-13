@@ -10,7 +10,13 @@
   color: black;
 }
 
-.container a {
+// .main-container a {
+//   text-decoration: none;
+
+// }
+
+.main-container :hover {
+  color: #D0D0D0;
   text-decoration: none;
 }
 
@@ -27,7 +33,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
 }
 
@@ -71,13 +77,49 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+}
+.garden-name {
+  text-align: center;
+}
+
+// .garden-country {
+//   white-space: pre-line;
+// }
+
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+#map {
+  height: 50vh;
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+
+.main-container {
+  display: flex;
+}
+
+.map{
+  padding: 0px 100px 10px 10px;
+}
+
+.cards {
+  flex-grow: 1;
+}
+
+h2.garden-name {
+  text-decoration: solid;
 }
