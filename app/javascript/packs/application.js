@@ -8,21 +8,21 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-
 import 'bootstrap';
-import flatpickr from "flatpickr";
 
-
+import { initMapbox } from '../plugins/init_mapbox';
 
 
 document.addEventListener('turbolinks:load', () => {
 
-flatpickr(".datepicker", {
-  minDate: "today",
-  altInput: true,
-  altFormat: "F j, Y",
-  dateFormat: "Y-m-d",
-});
+  initMapbox();
+
+  // flatpickr(".datepicker", {
+  //   minDate: "today",
+  //   altInput: true,
+  //   altFormat: "F j, Y",
+  //   dateFormat: "Y-m-d",
+  // });
 
 })
 // Uncomment to copy all static images under ../images to the output folder and reference
